@@ -1,6 +1,7 @@
 package com.example.bytedance.myapplication
 
-object GrammarTest{
+object GrammarTest{  //一个object 对象 ，单例模式
+// 对象声明的初始化过程是线程安全的。
 
     fun testKotlin(){
         var testInt : Int

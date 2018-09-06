@@ -25,6 +25,7 @@ class MainActivity : AppCompatActivity() {
             testSingleton()
             testInterface()
             testInherit()
+            MyClass1.create().test()
         }
     }
 
