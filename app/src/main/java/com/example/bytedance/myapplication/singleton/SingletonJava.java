@@ -1,4 +1,4 @@
-package com.example.bytedance.myapplication;
+package com.example.bytedance.myapplication.singleton;
 
 public class SingletonJava {
     private static SingletonJava instance;

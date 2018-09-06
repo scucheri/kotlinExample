@@ -1,4 +1,4 @@
-package com.example.bytedance.myapplication
+package com.example.bytedance.myapplication.interf
 
 interface kotlinInterface1{
     fun code1()

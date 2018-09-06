@@ -2,6 +2,10 @@ package com.example.bytedance.myapplication
 
 import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
+import com.example.bytedance.myapplication.inherit.MouseAdapterFather
+import com.example.bytedance.myapplication.interf.kotlinInterface0
+import com.example.bytedance.myapplication.interf.kotlinInterface1
+import com.example.bytedance.myapplication.singleton.*
 import kotlinx.android.synthetic.main.activity_main.*
 
 class MainActivity : AppCompatActivity() {
@@ -20,20 +24,18 @@ class MainActivity : AppCompatActivity() {
             testKotlin()
             testSingleton()
             testInterface()
+            testInherit()
         }
     }
 
-    object MouseAdapterFather : MouseAdapter(){  //object 实现类的继承
-        override var adapter: Int = 120
-
-        override fun test(){
-           super.test()
-           println("MouseAdapterFather: ${adapter}")
-           }
+    fun testInherit(){
+        var fatherAdapter  = MouseAdapterFather()
+        fatherAdapter.test()
     }
 
+
     fun testInterface(){
-        var testInterface = object: kotlinInterface0,kotlinInterface1{  //object 实现匿名内部类
+        var testInterface = object: kotlinInterface0, kotlinInterface1 {  //object 实现匿名内部类
             override fun test1() {
                 println("kotlinInterface0")
             }

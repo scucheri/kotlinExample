@@ -1,19 +1,19 @@
 The target system is: Android - 1 - x86_64
 The host system is: Darwin - 17.4.0 - x86_64
 Determining if the C compiler works passed with the following output:
-Change Dir: /Users/bytedance/code/android/my/jni_kotlin/app/.externalNativeBuild/cmake/debug/x86_64/CMakeFiles/CMakeTmp
+Change Dir: /Users/bytedance/code/android/study/kotlinExample/app/.externalNativeBuild/cmake/debug/x86_64/CMakeFiles/CMakeTmp
 
-Run Build Command:"/Users/bytedance/Library/Android/sdk/cmake/3.6.4111459/bin/ninja" "cmTC_b2f2a"
-[1/2] Building C object CMakeFiles/cmTC_b2f2a.dir/testCCompiler.c.o
-[2/2] Linking C executable cmTC_b2f2a
+Run Build Command:"/Users/bytedance/Library/Android/sdk/cmake/3.6.4111459/bin/ninja" "cmTC_c8952"
+[1/2] Building C object CMakeFiles/cmTC_c8952.dir/testCCompiler.c.o
+[2/2] Linking C executable cmTC_c8952
 
 
 Detecting C compiler ABI info compiled with the following output:
-Change Dir: /Users/bytedance/code/android/my/jni_kotlin/app/.externalNativeBuild/cmake/debug/x86_64/CMakeFiles/CMakeTmp
+Change Dir: /Users/bytedance/code/android/study/kotlinExample/app/.externalNativeBuild/cmake/debug/x86_64/CMakeFiles/CMakeTmp
 
-Run Build Command:"/Users/bytedance/Library/Android/sdk/cmake/3.6.4111459/bin/ninja" "cmTC_02571"
-[1/2] Building C object CMakeFiles/cmTC_02571.dir/CMakeCCompilerABI.c.o
-[2/2] Linking C executable cmTC_02571
+Run Build Command:"/Users/bytedance/Library/Android/sdk/cmake/3.6.4111459/bin/ninja" "cmTC_1e03c"
+[1/2] Building C object CMakeFiles/cmTC_1e03c.dir/CMakeCCompilerABI.c.o
+[2/2] Linking C executable cmTC_1e03c
 Android (4691093 based on r316199) clang version 6.0.2 (https://android.googlesource.com/toolchain/clang 183abd29fc496f55536e7d904e0abae47888fc7f) (https://android.googlesource.com/toolchain/llvm 34361f192e41ed6e4e8f9aca80a4ea7e9856f327) (based on LLVM 6.0.2svn)
 Target: x86_64-none-linux-android
 Thread model: posix
@@ -23,16 +23,16 @@ Selected GCC installation: /Users/bytedance/Library/Android/sdk/ndk-bundle/toolc
 Candidate multilib: .;@m64
 Candidate multilib: 32;@m32
 Selected multilib: .;@m64
- "/Users/bytedance/Library/Android/sdk/ndk-bundle/toolchains/x86_64-4.9/prebuilt/darwin-x86_64/lib/gcc/x86_64-linux-android/4.9.x/../../../../x86_64-linux-android/bin/ld" --sysroot=/Users/bytedance/Library/Android/sdk/ndk-bundle/platforms/android-21/arch-x86_64 -pie --eh-frame-hdr -m elf_x86_64 -dynamic-linker /system/bin/linker64 -o cmTC_02571 /Users/bytedance/Library/Android/sdk/ndk-bundle/platforms/android-21/arch-x86_64/usr/lib/../lib64/crtbegin_dynamic.o -L/Users/bytedance/Library/Android/sdk/ndk-bundle/sources/cxx-stl/llvm-libc++/libs/x86_64 -L/Users/bytedance/Library/Android/sdk/ndk-bundle/toolchains/llvm/prebuilt/darwin-x86_64/lib64/clang/6.0.2/lib/linux/x86_64 -L/Users/bytedance/Library/Android/sdk/ndk-bundle/toolchains/x86_64-4.9/prebuilt/darwin-x86_64/lib/gcc/x86_64-linux-android/4.9.x -L/Users/bytedance/Library/Android/sdk/ndk-bundle/toolchains/x86_64-4.9/prebuilt/darwin-x86_64/lib/gcc/x86_64-linux-android/4.9.x/../../../../x86_64-linux-android/lib/../lib64 -L/Users/bytedance/Library/Android/sdk/ndk-bundle/platforms/android-21/arch-x86_64/usr/lib/../lib64 -L/Users/bytedance/Library/Android/sdk/ndk-bundle/toolchains/x86_64-4.9/prebuilt/darwin-x86_64/lib/gcc/x86_64-linux-android/4.9.x/../../../../x86_64-linux-android/lib -L/Users/bytedance/Library/Android/sdk/ndk-bundle/platforms/android-21/arch-x86_64/usr/lib --exclude-libs libgcc.a --exclude-libs libatomic.a --build-id --warn-shared-textrel --fatal-warnings --no-undefined -z noexecstack -z relro -z now --gc-sections -z nocopyreloc CMakeFiles/cmTC_02571.dir/CMakeCCompilerABI.c.o -lgcc -ldl -lc -lgcc -ldl /Users/bytedance/Library/Android/sdk/ndk-bundle/platforms/android-21/arch-x86_64/usr/lib/../lib64/crtend_android.o
+ "/Users/bytedance/Library/Android/sdk/ndk-bundle/toolchains/x86_64-4.9/prebuilt/darwin-x86_64/lib/gcc/x86_64-linux-android/4.9.x/../../../../x86_64-linux-android/bin/ld" --sysroot=/Users/bytedance/Library/Android/sdk/ndk-bundle/platforms/android-21/arch-x86_64 -pie --eh-frame-hdr -m elf_x86_64 -dynamic-linker /system/bin/linker64 -o cmTC_1e03c /Users/bytedance/Library/Android/sdk/ndk-bundle/platforms/android-21/arch-x86_64/usr/lib/../lib64/crtbegin_dynamic.o -L/Users/bytedance/Library/Android/sdk/ndk-bundle/sources/cxx-stl/llvm-libc++/libs/x86_64 -L/Users/bytedance/Library/Android/sdk/ndk-bundle/toolchains/llvm/prebuilt/darwin-x86_64/lib64/clang/6.0.2/lib/linux/x86_64 -L/Users/bytedance/Library/Android/sdk/ndk-bundle/toolchains/x86_64-4.9/prebuilt/darwin-x86_64/lib/gcc/x86_64-linux-android/4.9.x -L/Users/bytedance/Library/Android/sdk/ndk-bundle/toolchains/x86_64-4.9/prebuilt/darwin-x86_64/lib/gcc/x86_64-linux-android/4.9.x/../../../../x86_64-linux-android/lib/../lib64 -L/Users/bytedance/Library/Android/sdk/ndk-bundle/platforms/android-21/arch-x86_64/usr/lib/../lib64 -L/Users/bytedance/Library/Android/sdk/ndk-bundle/toolchains/x86_64-4.9/prebuilt/darwin-x86_64/lib/gcc/x86_64-linux-android/4.9.x/../../../../x86_64-linux-android/lib -L/Users/bytedance/Library/Android/sdk/ndk-bundle/platforms/android-21/arch-x86_64/usr/lib --exclude-libs libgcc.a --exclude-libs libatomic.a --build-id --warn-shared-textrel --fatal-warnings --no-undefined -z noexecstack -z relro -z now --gc-sections -z nocopyreloc CMakeFiles/cmTC_1e03c.dir/CMakeCCompilerABI.c.o -lgcc -ldl -lc -lgcc -ldl /Users/bytedance/Library/Android/sdk/ndk-bundle/platforms/android-21/arch-x86_64/usr/lib/../lib64/crtend_android.o
 
 
 Parsed C implicit link information from above output:
   link line regex: [^( *|.*[/\])(x86_64-linux-android-ld|([^/\]+-)?ld|collect2)[^/\]*( |$)]
-  ignore line: [Change Dir: /Users/bytedance/code/android/my/jni_kotlin/app/.externalNativeBuild/cmake/debug/x86_64/CMakeFiles/CMakeTmp]
+  ignore line: [Change Dir: /Users/bytedance/code/android/study/kotlinExample/app/.externalNativeBuild/cmake/debug/x86_64/CMakeFiles/CMakeTmp]
   ignore line: []
-  ignore line: [Run Build Command:"/Users/bytedance/Library/Android/sdk/cmake/3.6.4111459/bin/ninja" "cmTC_02571"]
-  ignore line: [[1/2] Building C object CMakeFiles/cmTC_02571.dir/CMakeCCompilerABI.c.o]
-  ignore line: [[2/2] Linking C executable cmTC_02571]
+  ignore line: [Run Build Command:"/Users/bytedance/Library/Android/sdk/cmake/3.6.4111459/bin/ninja" "cmTC_1e03c"]
+  ignore line: [[1/2] Building C object CMakeFiles/cmTC_1e03c.dir/CMakeCCompilerABI.c.o]
+  ignore line: [[2/2] Linking C executable cmTC_1e03c]
   ignore line: [Android (4691093 based on r316199) clang version 6.0.2 (https://android.googlesource.com/toolchain/clang 183abd29fc496f55536e7d904e0abae47888fc7f) (https://android.googlesource.com/toolchain/llvm 34361f192e41ed6e4e8f9aca80a4ea7e9856f327) (based on LLVM 6.0.2svn)]
   ignore line: [Target: x86_64-none-linux-android]
   ignore line: [Thread model: posix]
@@ -45,7 +45,7 @@ Parsed C implicit link information from above output:
   ignore line: [@m32]
   ignore line: [Selected multilib: .]
   ignore line: [@m64]
-  link line: [ "/Users/bytedance/Library/Android/sdk/ndk-bundle/toolchains/x86_64-4.9/prebuilt/darwin-x86_64/lib/gcc/x86_64-linux-android/4.9.x/../../../../x86_64-linux-android/bin/ld" --sysroot=/Users/bytedance/Library/Android/sdk/ndk-bundle/platforms/android-21/arch-x86_64 -pie --eh-frame-hdr -m elf_x86_64 -dynamic-linker /system/bin/linker64 -o cmTC_02571 /Users/bytedance/Library/Android/sdk/ndk-bundle/platforms/android-21/arch-x86_64/usr/lib/../lib64/crtbegin_dynamic.o -L/Users/bytedance/Library/Android/sdk/ndk-bundle/sources/cxx-stl/llvm-libc++/libs/x86_64 -L/Users/bytedance/Library/Android/sdk/ndk-bundle/toolchains/llvm/prebuilt/darwin-x86_64/lib64/clang/6.0.2/lib/linux/x86_64 -L/Users/bytedance/Library/Android/sdk/ndk-bundle/toolchains/x86_64-4.9/prebuilt/darwin-x86_64/lib/gcc/x86_64-linux-android/4.9.x -L/Users/bytedance/Library/Android/sdk/ndk-bundle/toolchains/x86_64-4.9/prebuilt/darwin-x86_64/lib/gcc/x86_64-linux-android/4.9.x/../../../../x86_64-linux-android/lib/../lib64 -L/Users/bytedance/Library/Android/sdk/ndk-bundle/platforms/android-21/arch-x86_64/usr/lib/../lib64 -L/Users/bytedance/Library/Android/sdk/ndk-bundle/toolchains/x86_64-4.9/prebuilt/darwin-x86_64/lib/gcc/x86_64-linux-android/4.9.x/../../../../x86_64-linux-android/lib -L/Users/bytedance/Library/Android/sdk/ndk-bundle/platforms/android-21/arch-x86_64/usr/lib --exclude-libs libgcc.a --exclude-libs libatomic.a --build-id --warn-shared-textrel --fatal-warnings --no-undefined -z noexecstack -z relro -z now --gc-sections -z nocopyreloc CMakeFiles/cmTC_02571.dir/CMakeCCompilerABI.c.o -lgcc -ldl -lc -lgcc -ldl /Users/bytedance/Library/Android/sdk/ndk-bundle/platforms/android-21/arch-x86_64/usr/lib/../lib64/crtend_android.o]
+  link line: [ "/Users/bytedance/Library/Android/sdk/ndk-bundle/toolchains/x86_64-4.9/prebuilt/darwin-x86_64/lib/gcc/x86_64-linux-android/4.9.x/../../../../x86_64-linux-android/bin/ld" --sysroot=/Users/bytedance/Library/Android/sdk/ndk-bundle/platforms/android-21/arch-x86_64 -pie --eh-frame-hdr -m elf_x86_64 -dynamic-linker /system/bin/linker64 -o cmTC_1e03c /Users/bytedance/Library/Android/sdk/ndk-bundle/platforms/android-21/arch-x86_64/usr/lib/../lib64/crtbegin_dynamic.o -L/Users/bytedance/Library/Android/sdk/ndk-bundle/sources/cxx-stl/llvm-libc++/libs/x86_64 -L/Users/bytedance/Library/Android/sdk/ndk-bundle/toolchains/llvm/prebuilt/darwin-x86_64/lib64/clang/6.0.2/lib/linux/x86_64 -L/Users/bytedance/Library/Android/sdk/ndk-bundle/toolchains/x86_64-4.9/prebuilt/darwin-x86_64/lib/gcc/x86_64-linux-android/4.9.x -L/Users/bytedance/Library/Android/sdk/ndk-bundle/toolchains/x86_64-4.9/prebuilt/darwin-x86_64/lib/gcc/x86_64-linux-android/4.9.x/../../../../x86_64-linux-android/lib/../lib64 -L/Users/bytedance/Library/Android/sdk/ndk-bundle/platforms/android-21/arch-x86_64/usr/lib/../lib64 -L/Users/bytedance/Library/Android/sdk/ndk-bundle/toolchains/x86_64-4.9/prebuilt/darwin-x86_64/lib/gcc/x86_64-linux-android/4.9.x/../../../../x86_64-linux-android/lib -L/Users/bytedance/Library/Android/sdk/ndk-bundle/platforms/android-21/arch-x86_64/usr/lib --exclude-libs libgcc.a --exclude-libs libatomic.a --build-id --warn-shared-textrel --fatal-warnings --no-undefined -z noexecstack -z relro -z now --gc-sections -z nocopyreloc CMakeFiles/cmTC_1e03c.dir/CMakeCCompilerABI.c.o -lgcc -ldl -lc -lgcc -ldl /Users/bytedance/Library/Android/sdk/ndk-bundle/platforms/android-21/arch-x86_64/usr/lib/../lib64/crtend_android.o]
     arg [/Users/bytedance/Library/Android/sdk/ndk-bundle/toolchains/x86_64-4.9/prebuilt/darwin-x86_64/lib/gcc/x86_64-linux-android/4.9.x/../../../../x86_64-linux-android/bin/ld] ==> ignore
     arg [--sysroot=/Users/bytedance/Library/Android/sdk/ndk-bundle/platforms/android-21/arch-x86_64] ==> ignore
     arg [-pie] ==> ignore
@@ -55,7 +55,7 @@ Parsed C implicit link information from above output:
     arg [-dynamic-linker] ==> ignore
     arg [/system/bin/linker64] ==> ignore
     arg [-o] ==> ignore
-    arg [cmTC_02571] ==> ignore
+    arg [cmTC_1e03c] ==> ignore
     arg [/Users/bytedance/Library/Android/sdk/ndk-bundle/platforms/android-21/arch-x86_64/usr/lib/../lib64/crtbegin_dynamic.o] ==> ignore
     arg [-L/Users/bytedance/Library/Android/sdk/ndk-bundle/sources/cxx-stl/llvm-libc++/libs/x86_64] ==> dir [/Users/bytedance/Library/Android/sdk/ndk-bundle/sources/cxx-stl/llvm-libc++/libs/x86_64]
     arg [-L/Users/bytedance/Library/Android/sdk/ndk-bundle/toolchains/llvm/prebuilt/darwin-x86_64/lib64/clang/6.0.2/lib/linux/x86_64] ==> dir [/Users/bytedance/Library/Android/sdk/ndk-bundle/toolchains/llvm/prebuilt/darwin-x86_64/lib64/clang/6.0.2/lib/linux/x86_64]
@@ -77,7 +77,7 @@ Parsed C implicit link information from above output:
     arg [-znow] ==> ignore
     arg [--gc-sections] ==> ignore
     arg [-znocopyreloc] ==> ignore
-    arg [CMakeFiles/cmTC_02571.dir/CMakeCCompilerABI.c.o] ==> ignore
+    arg [CMakeFiles/cmTC_1e03c.dir/CMakeCCompilerABI.c.o] ==> ignore
     arg [-lgcc] ==> lib [gcc]
     arg [-ldl] ==> lib [dl]
     arg [-lc] ==> lib [c]
@@ -101,11 +101,11 @@ Parsed C implicit link information from above output:
 
 
 Detecting C [-std=c11] compiler features compiled with the following output:
-Change Dir: /Users/bytedance/code/android/my/jni_kotlin/app/.externalNativeBuild/cmake/debug/x86_64/CMakeFiles/CMakeTmp
+Change Dir: /Users/bytedance/code/android/study/kotlinExample/app/.externalNativeBuild/cmake/debug/x86_64/CMakeFiles/CMakeTmp
 
-Run Build Command:"/Users/bytedance/Library/Android/sdk/cmake/3.6.4111459/bin/ninja" "cmTC_a98de"
-[1/2] Building C object CMakeFiles/cmTC_a98de.dir/feature_tests.c.o
-[2/2] Linking C executable cmTC_a98de
+Run Build Command:"/Users/bytedance/Library/Android/sdk/cmake/3.6.4111459/bin/ninja" "cmTC_d5b58"
+[1/2] Building C object CMakeFiles/cmTC_d5b58.dir/feature_tests.c.o
+[2/2] Linking C executable cmTC_d5b58
 
 
     Feature record: C_FEATURE:1c_function_prototypes
@@ -115,11 +115,11 @@ Run Build Command:"/Users/bytedance/Library/Android/sdk/cmake/3.6.4111459/bin/ni
 
 
 Detecting C [-std=c99] compiler features compiled with the following output:
-Change Dir: /Users/bytedance/code/android/my/jni_kotlin/app/.externalNativeBuild/cmake/debug/x86_64/CMakeFiles/CMakeTmp
+Change Dir: /Users/bytedance/code/android/study/kotlinExample/app/.externalNativeBuild/cmake/debug/x86_64/CMakeFiles/CMakeTmp
 
-Run Build Command:"/Users/bytedance/Library/Android/sdk/cmake/3.6.4111459/bin/ninja" "cmTC_a1592"
-[1/2] Building C object CMakeFiles/cmTC_a1592.dir/feature_tests.c.o
-[2/2] Linking C executable cmTC_a1592
+Run Build Command:"/Users/bytedance/Library/Android/sdk/cmake/3.6.4111459/bin/ninja" "cmTC_7a627"
+[1/2] Building C object CMakeFiles/cmTC_7a627.dir/feature_tests.c.o
+[2/2] Linking C executable cmTC_7a627
 
 
     Feature record: C_FEATURE:1c_function_prototypes
@@ -129,11 +129,11 @@ Run Build Command:"/Users/bytedance/Library/Android/sdk/cmake/3.6.4111459/bin/ni
 
 
 Detecting C [-std=c90] compiler features compiled with the following output:
-Change Dir: /Users/bytedance/code/android/my/jni_kotlin/app/.externalNativeBuild/cmake/debug/x86_64/CMakeFiles/CMakeTmp
+Change Dir: /Users/bytedance/code/android/study/kotlinExample/app/.externalNativeBuild/cmake/debug/x86_64/CMakeFiles/CMakeTmp
 
-Run Build Command:"/Users/bytedance/Library/Android/sdk/cmake/3.6.4111459/bin/ninja" "cmTC_d83f5"
-[1/2] Building C object CMakeFiles/cmTC_d83f5.dir/feature_tests.c.o
-[2/2] Linking C executable cmTC_d83f5
+Run Build Command:"/Users/bytedance/Library/Android/sdk/cmake/3.6.4111459/bin/ninja" "cmTC_6d5be"
+[1/2] Building C object CMakeFiles/cmTC_6d5be.dir/feature_tests.c.o
+[2/2] Linking C executable cmTC_6d5be
 
 
     Feature record: C_FEATURE:1c_function_prototypes
@@ -141,19 +141,19 @@ Run Build Command:"/Users/bytedance/Library/Android/sdk/cmake/3.6.4111459/bin/ni
     Feature record: C_FEATURE:0c_static_assert
     Feature record: C_FEATURE:0c_variadic_macros
 Determining if the CXX compiler works passed with the following output:
-Change Dir: /Users/bytedance/code/android/my/jni_kotlin/app/.externalNativeBuild/cmake/debug/x86_64/CMakeFiles/CMakeTmp
+Change Dir: /Users/bytedance/code/android/study/kotlinExample/app/.externalNativeBuild/cmake/debug/x86_64/CMakeFiles/CMakeTmp
 
-Run Build Command:"/Users/bytedance/Library/Android/sdk/cmake/3.6.4111459/bin/ninja" "cmTC_3a489"
-[1/2] Building CXX object CMakeFiles/cmTC_3a489.dir/testCXXCompiler.cxx.o
-[2/2] Linking CXX executable cmTC_3a489
+Run Build Command:"/Users/bytedance/Library/Android/sdk/cmake/3.6.4111459/bin/ninja" "cmTC_6fd89"
+[1/2] Building CXX object CMakeFiles/cmTC_6fd89.dir/testCXXCompiler.cxx.o
+[2/2] Linking CXX executable cmTC_6fd89
 
 
 Detecting CXX compiler ABI info compiled with the following output:
-Change Dir: /Users/bytedance/code/android/my/jni_kotlin/app/.externalNativeBuild/cmake/debug/x86_64/CMakeFiles/CMakeTmp
+Change Dir: /Users/bytedance/code/android/study/kotlinExample/app/.externalNativeBuild/cmake/debug/x86_64/CMakeFiles/CMakeTmp
 
-Run Build Command:"/Users/bytedance/Library/Android/sdk/cmake/3.6.4111459/bin/ninja" "cmTC_fa3b2"
-[1/2] Building CXX object CMakeFiles/cmTC_fa3b2.dir/CMakeCXXCompilerABI.cpp.o
-[2/2] Linking CXX executable cmTC_fa3b2
+Run Build Command:"/Users/bytedance/Library/Android/sdk/cmake/3.6.4111459/bin/ninja" "cmTC_7834c"
+[1/2] Building CXX object CMakeFiles/cmTC_7834c.dir/CMakeCXXCompilerABI.cpp.o
+[2/2] Linking CXX executable cmTC_7834c
 Android (4691093 based on r316199) clang version 6.0.2 (https://android.googlesource.com/toolchain/clang 183abd29fc496f55536e7d904e0abae47888fc7f) (https://android.googlesource.com/toolchain/llvm 34361f192e41ed6e4e8f9aca80a4ea7e9856f327) (based on LLVM 6.0.2svn)
 Target: x86_64-none-linux-android
 Thread model: posix
@@ -163,16 +163,16 @@ Selected GCC installation: /Users/bytedance/Library/Android/sdk/ndk-bundle/toolc
 Candidate multilib: .;@m64
 Candidate multilib: 32;@m32
 Selected multilib: .;@m64
- "/Users/bytedance/Library/Android/sdk/ndk-bundle/toolchains/x86_64-4.9/prebuilt/darwin-x86_64/lib/gcc/x86_64-linux-android/4.9.x/../../../../x86_64-linux-android/bin/ld" --sysroot=/Users/bytedance/Library/Android/sdk/ndk-bundle/platforms/android-21/arch-x86_64 -pie --eh-frame-hdr -m elf_x86_64 -dynamic-linker /system/bin/linker64 -o cmTC_fa3b2 /Users/bytedance/Library/Android/sdk/ndk-bundle/platforms/android-21/arch-x86_64/usr/lib/../lib64/crtbegin_dynamic.o -L/Users/bytedance/Library/Android/sdk/ndk-bundle/sources/cxx-stl/llvm-libc++/libs/x86_64 -L/Users/bytedance/Library/Android/sdk/ndk-bundle/toolchains/llvm/prebuilt/darwin-x86_64/lib64/clang/6.0.2/lib/linux/x86_64 -L/Users/bytedance/Library/Android/sdk/ndk-bundle/toolchains/x86_64-4.9/prebuilt/darwin-x86_64/lib/gcc/x86_64-linux-android/4.9.x -L/Users/bytedance/Library/Android/sdk/ndk-bundle/toolchains/x86_64-4.9/prebuilt/darwin-x86_64/lib/gcc/x86_64-linux-android/4.9.x/../../../../x86_64-linux-android/lib/../lib64 -L/Users/bytedance/Library/Android/sdk/ndk-bundle/platforms/android-21/arch-x86_64/usr/lib/../lib64 -L/Users/bytedance/Library/Android/sdk/ndk-bundle/toolchains/x86_64-4.9/prebuilt/darwin-x86_64/lib/gcc/x86_64-linux-android/4.9.x/../../../../x86_64-linux-android/lib -L/Users/bytedance/Library/Android/sdk/ndk-bundle/platforms/android-21/arch-x86_64/usr/lib --exclude-libs libgcc.a --exclude-libs libatomic.a --build-id --warn-shared-textrel --fatal-warnings --no-undefined -z noexecstack -z relro -z now --gc-sections -z nocopyreloc CMakeFiles/cmTC_fa3b2.dir/CMakeCXXCompilerABI.cpp.o -lm -lgcc -lgcc -ldl -lc -lgcc -lgcc -ldl /Users/bytedance/Library/Android/sdk/ndk-bundle/platforms/android-21/arch-x86_64/usr/lib/../lib64/crtend_android.o
+ "/Users/bytedance/Library/Android/sdk/ndk-bundle/toolchains/x86_64-4.9/prebuilt/darwin-x86_64/lib/gcc/x86_64-linux-android/4.9.x/../../../../x86_64-linux-android/bin/ld" --sysroot=/Users/bytedance/Library/Android/sdk/ndk-bundle/platforms/android-21/arch-x86_64 -pie --eh-frame-hdr -m elf_x86_64 -dynamic-linker /system/bin/linker64 -o cmTC_7834c /Users/bytedance/Library/Android/sdk/ndk-bundle/platforms/android-21/arch-x86_64/usr/lib/../lib64/crtbegin_dynamic.o -L/Users/bytedance/Library/Android/sdk/ndk-bundle/sources/cxx-stl/llvm-libc++/libs/x86_64 -L/Users/bytedance/Library/Android/sdk/ndk-bundle/toolchains/llvm/prebuilt/darwin-x86_64/lib64/clang/6.0.2/lib/linux/x86_64 -L/Users/bytedance/Library/Android/sdk/ndk-bundle/toolchains/x86_64-4.9/prebuilt/darwin-x86_64/lib/gcc/x86_64-linux-android/4.9.x -L/Users/bytedance/Library/Android/sdk/ndk-bundle/toolchains/x86_64-4.9/prebuilt/darwin-x86_64/lib/gcc/x86_64-linux-android/4.9.x/../../../../x86_64-linux-android/lib/../lib64 -L/Users/bytedance/Library/Android/sdk/ndk-bundle/platforms/android-21/arch-x86_64/usr/lib/../lib64 -L/Users/bytedance/Library/Android/sdk/ndk-bundle/toolchains/x86_64-4.9/prebuilt/darwin-x86_64/lib/gcc/x86_64-linux-android/4.9.x/../../../../x86_64-linux-android/lib -L/Users/bytedance/Library/Android/sdk/ndk-bundle/platforms/android-21/arch-x86_64/usr/lib --exclude-libs libgcc.a --exclude-libs libatomic.a --build-id --warn-shared-textrel --fatal-warnings --no-undefined -z noexecstack -z relro -z now --gc-sections -z nocopyreloc CMakeFiles/cmTC_7834c.dir/CMakeCXXCompilerABI.cpp.o -lm -lgcc -lgcc -ldl -lc -lgcc -lgcc -ldl /Users/bytedance/Library/Android/sdk/ndk-bundle/platforms/android-21/arch-x86_64/usr/lib/../lib64/crtend_android.o
 
 
 Parsed CXX implicit link information from above output:
   link line regex: [^( *|.*[/\])(x86_64-linux-android-ld|([^/\]+-)?ld|collect2)[^/\]*( |$)]
-  ignore line: [Change Dir: /Users/bytedance/code/android/my/jni_kotlin/app/.externalNativeBuild/cmake/debug/x86_64/CMakeFiles/CMakeTmp]
+  ignore line: [Change Dir: /Users/bytedance/code/android/study/kotlinExample/app/.externalNativeBuild/cmake/debug/x86_64/CMakeFiles/CMakeTmp]
   ignore line: []
-  ignore line: [Run Build Command:"/Users/bytedance/Library/Android/sdk/cmake/3.6.4111459/bin/ninja" "cmTC_fa3b2"]
-  ignore line: [[1/2] Building CXX object CMakeFiles/cmTC_fa3b2.dir/CMakeCXXCompilerABI.cpp.o]
-  ignore line: [[2/2] Linking CXX executable cmTC_fa3b2]
+  ignore line: [Run Build Command:"/Users/bytedance/Library/Android/sdk/cmake/3.6.4111459/bin/ninja" "cmTC_7834c"]
+  ignore line: [[1/2] Building CXX object CMakeFiles/cmTC_7834c.dir/CMakeCXXCompilerABI.cpp.o]
+  ignore line: [[2/2] Linking CXX executable cmTC_7834c]
   ignore line: [Android (4691093 based on r316199) clang version 6.0.2 (https://android.googlesource.com/toolchain/clang 183abd29fc496f55536e7d904e0abae47888fc7f) (https://android.googlesource.com/toolchain/llvm 34361f192e41ed6e4e8f9aca80a4ea7e9856f327) (based on LLVM 6.0.2svn)]
   ignore line: [Target: x86_64-none-linux-android]
   ignore line: [Thread model: posix]
@@ -185,7 +185,7 @@ Parsed CXX implicit link information from above output:
   ignore line: [@m32]
   ignore line: [Selected multilib: .]
   ignore line: [@m64]
-  link line: [ "/Users/bytedance/Library/Android/sdk/ndk-bundle/toolchains/x86_64-4.9/prebuilt/darwin-x86_64/lib/gcc/x86_64-linux-android/4.9.x/../../../../x86_64-linux-android/bin/ld" --sysroot=/Users/bytedance/Library/Android/sdk/ndk-bundle/platforms/android-21/arch-x86_64 -pie --eh-frame-hdr -m elf_x86_64 -dynamic-linker /system/bin/linker64 -o cmTC_fa3b2 /Users/bytedance/Library/Android/sdk/ndk-bundle/platforms/android-21/arch-x86_64/usr/lib/../lib64/crtbegin_dynamic.o -L/Users/bytedance/Library/Android/sdk/ndk-bundle/sources/cxx-stl/llvm-libc++/libs/x86_64 -L/Users/bytedance/Library/Android/sdk/ndk-bundle/toolchains/llvm/prebuilt/darwin-x86_64/lib64/clang/6.0.2/lib/linux/x86_64 -L/Users/bytedance/Library/Android/sdk/ndk-bundle/toolchains/x86_64-4.9/prebuilt/darwin-x86_64/lib/gcc/x86_64-linux-android/4.9.x -L/Users/bytedance/Library/Android/sdk/ndk-bundle/toolchains/x86_64-4.9/prebuilt/darwin-x86_64/lib/gcc/x86_64-linux-android/4.9.x/../../../../x86_64-linux-android/lib/../lib64 -L/Users/bytedance/Library/Android/sdk/ndk-bundle/platforms/android-21/arch-x86_64/usr/lib/../lib64 -L/Users/bytedance/Library/Android/sdk/ndk-bundle/toolchains/x86_64-4.9/prebuilt/darwin-x86_64/lib/gcc/x86_64-linux-android/4.9.x/../../../../x86_64-linux-android/lib -L/Users/bytedance/Library/Android/sdk/ndk-bundle/platforms/android-21/arch-x86_64/usr/lib --exclude-libs libgcc.a --exclude-libs libatomic.a --build-id --warn-shared-textrel --fatal-warnings --no-undefined -z noexecstack -z relro -z now --gc-sections -z nocopyreloc CMakeFiles/cmTC_fa3b2.dir/CMakeCXXCompilerABI.cpp.o -lm -lgcc -lgcc -ldl -lc -lgcc -lgcc -ldl /Users/bytedance/Library/Android/sdk/ndk-bundle/platforms/android-21/arch-x86_64/usr/lib/../lib64/crtend_android.o]
+  link line: [ "/Users/bytedance/Library/Android/sdk/ndk-bundle/toolchains/x86_64-4.9/prebuilt/darwin-x86_64/lib/gcc/x86_64-linux-android/4.9.x/../../../../x86_64-linux-android/bin/ld" --sysroot=/Users/bytedance/Library/Android/sdk/ndk-bundle/platforms/android-21/arch-x86_64 -pie --eh-frame-hdr -m elf_x86_64 -dynamic-linker /system/bin/linker64 -o cmTC_7834c /Users/bytedance/Library/Android/sdk/ndk-bundle/platforms/android-21/arch-x86_64/usr/lib/../lib64/crtbegin_dynamic.o -L/Users/bytedance/Library/Android/sdk/ndk-bundle/sources/cxx-stl/llvm-libc++/libs/x86_64 -L/Users/bytedance/Library/Android/sdk/ndk-bundle/toolchains/llvm/prebuilt/darwin-x86_64/lib64/clang/6.0.2/lib/linux/x86_64 -L/Users/bytedance/Library/Android/sdk/ndk-bundle/toolchains/x86_64-4.9/prebuilt/darwin-x86_64/lib/gcc/x86_64-linux-android/4.9.x -L/Users/bytedance/Library/Android/sdk/ndk-bundle/toolchains/x86_64-4.9/prebuilt/darwin-x86_64/lib/gcc/x86_64-linux-android/4.9.x/../../../../x86_64-linux-android/lib/../lib64 -L/Users/bytedance/Library/Android/sdk/ndk-bundle/platforms/android-21/arch-x86_64/usr/lib/../lib64 -L/Users/bytedance/Library/Android/sdk/ndk-bundle/toolchains/x86_64-4.9/prebuilt/darwin-x86_64/lib/gcc/x86_64-linux-android/4.9.x/../../../../x86_64-linux-android/lib -L/Users/bytedance/Library/Android/sdk/ndk-bundle/platforms/android-21/arch-x86_64/usr/lib --exclude-libs libgcc.a --exclude-libs libatomic.a --build-id --warn-shared-textrel --fatal-warnings --no-undefined -z noexecstack -z relro -z now --gc-sections -z nocopyreloc CMakeFiles/cmTC_7834c.dir/CMakeCXXCompilerABI.cpp.o -lm -lgcc -lgcc -ldl -lc -lgcc -lgcc -ldl /Users/bytedance/Library/Android/sdk/ndk-bundle/platforms/android-21/arch-x86_64/usr/lib/../lib64/crtend_android.o]
     arg [/Users/bytedance/Library/Android/sdk/ndk-bundle/toolchains/x86_64-4.9/prebuilt/darwin-x86_64/lib/gcc/x86_64-linux-android/4.9.x/../../../../x86_64-linux-android/bin/ld] ==> ignore
     arg [--sysroot=/Users/bytedance/Library/Android/sdk/ndk-bundle/platforms/android-21/arch-x86_64] ==> ignore
     arg [-pie] ==> ignore
@@ -195,7 +195,7 @@ Parsed CXX implicit link information from above output:
     arg [-dynamic-linker] ==> ignore
     arg [/system/bin/linker64] ==> ignore
     arg [-o] ==> ignore
-    arg [cmTC_fa3b2] ==> ignore
+    arg [cmTC_7834c] ==> ignore
     arg [/Users/bytedance/Library/Android/sdk/ndk-bundle/platforms/android-21/arch-x86_64/usr/lib/../lib64/crtbegin_dynamic.o] ==> ignore
     arg [-L/Users/bytedance/Library/Android/sdk/ndk-bundle/sources/cxx-stl/llvm-libc++/libs/x86_64] ==> dir [/Users/bytedance/Library/Android/sdk/ndk-bundle/sources/cxx-stl/llvm-libc++/libs/x86_64]
     arg [-L/Users/bytedance/Library/Android/sdk/ndk-bundle/toolchains/llvm/prebuilt/darwin-x86_64/lib64/clang/6.0.2/lib/linux/x86_64] ==> dir [/Users/bytedance/Library/Android/sdk/ndk-bundle/toolchains/llvm/prebuilt/darwin-x86_64/lib64/clang/6.0.2/lib/linux/x86_64]
@@ -217,7 +217,7 @@ Parsed CXX implicit link information from above output:
     arg [-znow] ==> ignore
     arg [--gc-sections] ==> ignore
     arg [-znocopyreloc] ==> ignore
-    arg [CMakeFiles/cmTC_fa3b2.dir/CMakeCXXCompilerABI.cpp.o] ==> ignore
+    arg [CMakeFiles/cmTC_7834c.dir/CMakeCXXCompilerABI.cpp.o] ==> ignore
     arg [-lm] ==> lib [m]
     arg [-lgcc] ==> lib [gcc]
     arg [-lgcc] ==> lib [gcc]
@@ -246,11 +246,11 @@ Parsed CXX implicit link information from above output:
 
 
 Detecting CXX [-std=c++14] compiler features compiled with the following output:
-Change Dir: /Users/bytedance/code/android/my/jni_kotlin/app/.externalNativeBuild/cmake/debug/x86_64/CMakeFiles/CMakeTmp
+Change Dir: /Users/bytedance/code/android/study/kotlinExample/app/.externalNativeBuild/cmake/debug/x86_64/CMakeFiles/CMakeTmp
 
-Run Build Command:"/Users/bytedance/Library/Android/sdk/cmake/3.6.4111459/bin/ninja" "cmTC_633ef"
-[1/2] Building CXX object CMakeFiles/cmTC_633ef.dir/feature_tests.cxx.o
-[2/2] Linking CXX executable cmTC_633ef
+Run Build Command:"/Users/bytedance/Library/Android/sdk/cmake/3.6.4111459/bin/ninja" "cmTC_793af"
+[1/2] Building CXX object CMakeFiles/cmTC_793af.dir/feature_tests.cxx.o
+[2/2] Linking CXX executable cmTC_793af
 
 
     Feature record: CXX_FEATURE:1cxx_aggregate_default_initializers
@@ -313,11 +313,11 @@ Run Build Command:"/Users/bytedance/Library/Android/sdk/cmake/3.6.4111459/bin/ni
 
 
 Detecting CXX [-std=c++11] compiler features compiled with the following output:
-Change Dir: /Users/bytedance/code/android/my/jni_kotlin/app/.externalNativeBuild/cmake/debug/x86_64/CMakeFiles/CMakeTmp
+Change Dir: /Users/bytedance/code/android/study/kotlinExample/app/.externalNativeBuild/cmake/debug/x86_64/CMakeFiles/CMakeTmp
 
-Run Build Command:"/Users/bytedance/Library/Android/sdk/cmake/3.6.4111459/bin/ninja" "cmTC_292e3"
-[1/2] Building CXX object CMakeFiles/cmTC_292e3.dir/feature_tests.cxx.o
-[2/2] Linking CXX executable cmTC_292e3
+Run Build Command:"/Users/bytedance/Library/Android/sdk/cmake/3.6.4111459/bin/ninja" "cmTC_afdf2"
+[1/2] Building CXX object CMakeFiles/cmTC_afdf2.dir/feature_tests.cxx.o
+[2/2] Linking CXX executable cmTC_afdf2
 
 
     Feature record: CXX_FEATURE:0cxx_aggregate_default_initializers
@@ -380,11 +380,11 @@ Run Build Command:"/Users/bytedance/Library/Android/sdk/cmake/3.6.4111459/bin/ni
 
 
 Detecting CXX [-std=c++98] compiler features compiled with the following output:
-Change Dir: /Users/bytedance/code/android/my/jni_kotlin/app/.externalNativeBuild/cmake/debug/x86_64/CMakeFiles/CMakeTmp
+Change Dir: /Users/bytedance/code/android/study/kotlinExample/app/.externalNativeBuild/cmake/debug/x86_64/CMakeFiles/CMakeTmp
 
-Run Build Command:"/Users/bytedance/Library/Android/sdk/cmake/3.6.4111459/bin/ninja" "cmTC_1f2a1"
-[1/2] Building CXX object CMakeFiles/cmTC_1f2a1.dir/feature_tests.cxx.o
-[2/2] Linking CXX executable cmTC_1f2a1
+Run Build Command:"/Users/bytedance/Library/Android/sdk/cmake/3.6.4111459/bin/ninja" "cmTC_18fea"
+[1/2] Building CXX object CMakeFiles/cmTC_18fea.dir/feature_tests.cxx.o
+[2/2] Linking CXX executable cmTC_18fea
 
 
     Feature record: CXX_FEATURE:0cxx_aggregate_default_initializers

@@ -1,3 +1,5 @@
+package com.example.bytedance.myapplication.singleton
+
 //package可以没有
 
 class SingletonKt0 private constructor() {
@@ -14,6 +16,6 @@ class SingletonKt0 private constructor() {
     var b:String? = null
 
      fun test(){
-        println("kotlin SingletonKt0 test ")
+        println("kotlin com.example.bytedance.myapplication.singleton.SingletonKt0 test ")
     }
 }
