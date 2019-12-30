@@ -184,6 +184,7 @@ object GrammarTest{  //一个object 对象 ，单例模式
 
     fun getUsers(): List<User> {
         return listOf(User("xiao"),User("yu"),User("mi"),User("xiao1"))  //新建对象不需要 new
+        User("testxiaoyu").test()
     }
 
 

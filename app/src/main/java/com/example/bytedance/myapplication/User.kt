@@ -23,4 +23,10 @@ class User constructor(lastName: String){
         override fun toString(): String {
             return "lastName: ${lastName}"
         }
+
+    fun test(){
+        println("User test ${lastName}" )
     }
+
+    }
+
