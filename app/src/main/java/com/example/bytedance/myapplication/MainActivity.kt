@@ -1,13 +1,16 @@
 package com.example.bytedance.myapplication
 
+import android.os.AsyncTask
 import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
+import android.view.View
 import com.example.bytedance.myapplication.inherit.MouseAdapterFather
 import com.example.bytedance.myapplication.interf.kotlinInterface0
 import com.example.bytedance.myapplication.interf.kotlinInterface1
 import com.example.bytedance.myapplication.singleton.*
 import kotlinx.android.synthetic.main.activity_main.*
+import kotlin.concurrent.thread
 
 class MainActivity : AppCompatActivity() {
 
@@ -28,9 +31,65 @@ class MainActivity : AppCompatActivity() {
             testInherit()
             MyClass1.create().test()
             testFunctionParam()
+//            testWaitAsyncTask(it)
+            testVolatile()
         }
 
     }
+
+    fun testWaitAsyncTask(v: View) {
+        val lock = java.lang.Object()
+        val waitTask = WaitTask(lock)
+        synchronized(lock) {
+            try {
+                waitTask.execute("test--WaitNotify--Task")
+                // Wait for this worker thread’s notification
+                Log.i("test_WaitTask: ", "before wait  ${Thread.currentThread().name}")
+                lock.wait()
+                Log.i("test_WaitTask: ", "after wait  ${Thread.currentThread().name}")
+            } catch (e: InterruptedException) {
+            }
+        }
+    }
+
+    internal class WaitTask(private val lock: java.lang.Object) : AsyncTask<String, Int, Long>() {
+        override fun doInBackground(vararg params: String): Long {
+            synchronized(lock) {
+                Log.i("test_WaitTask: ", "wait task start:  $params ${Thread.currentThread().name}")
+                // Finished, notify the main thread
+
+                Thread.sleep(5000)
+                Log.i("test_WaitTask: ", "before notify  ${Thread.currentThread().name}")
+                lock.notify()
+                Log.i("test_WaitTask: ", "after notify  ${Thread.currentThread().name}")
+            }
+            return 0
+        }
+    }
+
+
+    @Volatile private var running = false
+
+    fun testVolatile(){
+        start()
+        Thread.sleep(2000)
+        stop()
+    }
+
+    fun start() {
+        running = true
+        thread(start = true) {
+            while (running) { // 另一个线程stop之后这个线程能立即感知到
+                println("test_volatile Still running: ${Thread.currentThread()}")
+            }
+        }
+    }
+
+    fun stop() {
+        running = false
+        println("test_volatile  Stopped: ${Thread.currentThread()}")
+    }
+
 
     private fun  testFunctionParam() {
         val list = listOf("1uuf", "2iejnfg", "sfhbbgghg3")
