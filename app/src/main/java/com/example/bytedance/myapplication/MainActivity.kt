@@ -5,12 +5,13 @@ import android.content.Context
 import android.os.AsyncTask
 import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
-import android.util.AttributeSet
 import android.util.Log
 import android.view.View
 import com.example.bytedance.myapplication.inherit.MouseAdapterFather
 import com.example.bytedance.myapplication.interf.kotlinInterface0
 import com.example.bytedance.myapplication.interf.kotlinInterface1
+import com.example.bytedance.myapplication.lambda.TestLambda
+import com.example.bytedance.myapplication.lambda.TestLambdaKotlin
 import com.example.bytedance.myapplication.singleton.*
 import kotlinx.android.synthetic.main.activity_main.*
 import kotlin.concurrent.thread
@@ -25,8 +26,13 @@ class MainActivity : AppCompatActivity() {
         sample_text.text = stringFromJNI()
 
         testButton.text = "testNew"
+        printProcessInfo()
+        initJavaCrashHandler()
 
-        testPostDelayAndAnr()
+        TestLambda.getInstance().lambdaDemo()
+        TestLambdaKotlin.lambdaDemo()
+
+        //        testPostDelayAndAnr()
 
         testButton.setOnClickListener {
             println("onclick " + it.x)
@@ -37,9 +43,27 @@ class MainActivity : AppCompatActivity() {
             MyClass1.create().test()
             testFunctionParam() //            testWaitAsyncTask(it)
             testVolatile()
-            testPostDelayAndAnr()
+//            testPostDelayAndAnr()
+
+//            triggerNativeCrashEvent()
+            triggerJavaCrashEvent()
         }
 
+    }
+
+    private fun initJavaCrashHandler() {
+        Thread.setDefaultUncaughtExceptionHandler(MyUncaughtExceptionHandler())
+    }
+
+    private fun triggerJavaCrashEvent(){
+        var a  = 1
+        var b = 0
+        var c = a/b
+    }
+
+    private fun triggerNativeCrashEvent() {
+        Log.i("testNativeCrash",testNativeCrash())
+        printProcessInfo()
     }
 
 
@@ -72,14 +96,17 @@ class MainActivity : AppCompatActivity() {
             i++
             Thread.sleep(1000) //            if(i % 1000000 == 0) {
             Log.i("testPostDelayAndAnr ", i.toString())
-            val am = getSystemService(Context.ACTIVITY_SERVICE) as ActivityManager
+            printProcessInfo()
+        }
+    }
 
-            if (am.processesInErrorState != null) {
-                for (state in am.processesInErrorState) {
-                    Log.i("testPostDelayAndAnr",
-                        " condition: ${state.condition}  crashData: ${state.crashData} longMsg: ${state.longMsg} " + " pid: ${state.pid}) processName: ${state.processName} shortMsg: ${state.shortMsg} stackTrace: ${state.stackTrace} tag: ${state.tag} uid: ${state.uid}")
-                }
-            } //            }
+    private fun printProcessInfo() {
+        val am = getSystemService(Context.ACTIVITY_SERVICE) as ActivityManager
+        if (am.processesInErrorState != null) {
+            for (state in am.processesInErrorState) {
+                Log.i("printProcessInfo",
+                    " condition: ${state.condition}  crashData: ${state.crashData} longMsg: ${state.longMsg} " + " pid: ${state.pid}) processName: ${state.processName} shortMsg: ${state.shortMsg} stackTrace: ${state.stackTrace} tag: ${state.tag} uid: ${state.uid}")
+            }
         }
     }
 
@@ -215,6 +242,9 @@ class MainActivity : AppCompatActivity() {
      */
     external fun stringFromJNI(): String
 
+    external fun testNativeCrash(): String
+
+
     companion object {
 
         // Used to load the 'native-lib' library on application startup.
@@ -222,4 +252,5 @@ class MainActivity : AppCompatActivity() {
             System.loadLibrary("native-lib")
         }
     }
+
 }
