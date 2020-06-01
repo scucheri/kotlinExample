@@ -25,7 +25,7 @@ public class TestLambda {
             }
         }
     }
-    // 定义一个 SAM
+    // 定义一个 SAM (single abstract )
     interface Filter {
         boolean test(int x);
     }

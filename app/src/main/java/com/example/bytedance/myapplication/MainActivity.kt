@@ -2,6 +2,7 @@ package com.example.bytedance.myapplication
 
 import android.app.ActivityManager
 import android.content.Context
+import android.content.Intent
 import android.os.AsyncTask
 import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
@@ -12,6 +13,7 @@ import com.example.bytedance.myapplication.interf.kotlinInterface0
 import com.example.bytedance.myapplication.interf.kotlinInterface1
 import com.example.bytedance.myapplication.lambda.TestLambda
 import com.example.bytedance.myapplication.lambda.TestLambdaKotlin
+import com.example.bytedance.myapplication.leaktest.InputMethodLeakUtil
 import com.example.bytedance.myapplication.singleton.*
 import kotlinx.android.synthetic.main.activity_main.*
 import kotlin.concurrent.thread
@@ -29,8 +31,6 @@ class MainActivity : AppCompatActivity() {
         printProcessInfo()
         initJavaCrashHandler()
 
-        TestLambda.getInstance().lambdaDemo()
-        TestLambdaKotlin.lambdaDemo()
 
         //        testPostDelayAndAnr()
 
@@ -46,9 +46,27 @@ class MainActivity : AppCompatActivity() {
 //            testPostDelayAndAnr()
 
 //            triggerNativeCrashEvent()
-            triggerJavaCrashEvent()
+//            triggerJavaCrashEvent()
+
+            testLambda()
         }
 
+        testButton1.setOnClickListener{
+            var intent = Intent(this, InputMethodTestActivity::class.java)
+            startActivity(intent)
+        }
+
+    }
+
+    override fun onDestroy() {
+        super.onDestroy()
+
+        InputMethodLeakUtil.fixInputMethodManagerLeak(this)
+    }
+
+    private fun testLambda() {
+        TestLambda.getInstance().lambdaDemo()
+        TestLambdaKotlin.lambdaDemo()
     }
 
     private fun initJavaCrashHandler() {
@@ -79,7 +97,7 @@ class MainActivity : AppCompatActivity() {
 
     override fun onPause() {
         super.onPause()
-        testPostDelayAndAnr()
+//        testPostDelayAndAnr()
     }
 
     private fun testPostDelayAndAnr() { // 连续点击两次，就会触发anr
