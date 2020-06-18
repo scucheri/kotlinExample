@@ -16,6 +16,8 @@ public class MyUncaughtExceptionHandler implements Thread.UncaughtExceptionHandl
             Log.e(TAG, "Thread name " + t.getName());
 
             Log.e(TAG, String.valueOf(e.getStackTrace()));
+
+            Thread.currentThread().getStackTrace();
             e.printStackTrace();
         }
     }
